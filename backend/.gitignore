@@ -1,6 +1,6 @@
 venv/
 __pycache__/
-solutions/
+.reference/
 
 # Any .env variant except the checked-in template
 .env*

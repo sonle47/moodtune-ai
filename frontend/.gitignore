@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-solutions/
+.reference/
 coverage/
 
 # Any .env variant (.env, .env.local, .env.production, ...) except the

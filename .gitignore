@@ -7,10 +7,10 @@
 backend/venv/
 backend/.env
 backend/__pycache__/
-backend/solutions/
+backend/.reference/
 
 # frontend
 frontend/node_modules/
 frontend/dist/
 frontend/.env
-frontend/solutions/
+frontend/.reference/
