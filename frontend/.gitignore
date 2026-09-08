@@ -1,0 +1,32 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+solutions/
+coverage/
+
+# Any .env variant (.env, .env.local, .env.production, ...) except the
+# checked-in template — catches env files by naming pattern, not just
+# the exact ".env" filename, so nothing with a real secret slips through.
+.env*
+!.env.example
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,0 +1,16 @@
+# editor / OS
+.venv/
+.vscode/
+.DS_Store
+
+# backend
+backend/venv/
+backend/.env
+backend/__pycache__/
+backend/solutions/
+
+# frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/solutions/

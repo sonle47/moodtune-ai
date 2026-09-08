@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 load_dotenv()
 
-from controllers.moods import router as moods_router
+from controllers.playlist import router as playlist_router
 from controllers.videos import router as videos_router
 
 
@@ -20,7 +20,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(moods_router)
+app.include_router(playlist_router)
 app.include_router(videos_router)
 
 

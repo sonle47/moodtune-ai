@@ -7,7 +7,7 @@ from services.search import add_search_links
 router = APIRouter()
 
 
-@router.post("/api/mood", response_model=MoodResponse)
+@router.post("/api/playlist", response_model=MoodResponse)
 def get_playlist(request: MoodRequest):
     data = strip_result(generate_content(mood=request.mood_text))
     data["playlist"] = add_search_links(data["playlist"])
