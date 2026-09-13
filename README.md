@@ -83,14 +83,3 @@ time doing prompt engineering on purpose instead of just chatting with an AI. Wh
 <img width="1865" height="8192" alt="Untitled diagram-2026-09-12-224323" src="https://github.com/user-attachments/assets/e58d1c4a-ee48-4053-b6b4-238b1529396d" />
 
 ## What's next
-
-I'm going to create a small text-to-mood classifier using scikit-learn, since Gemini currently handles all of that classification through an API call. My plan based on Claude Code:
-
-- Write down several example phrases for each of my four moods (focus, chill, energize, destress)
-- Convert those example phrases into numerical representations using a TfidfVectorizer
-- Train a LogisticRegression model on those phrases so it can predict the mood associated with new text
-
-This is a very basic form of supervised learning, however, it will be my own classification model from beginning-to-end, with no need for prompts or API keys. If this is successful, I would like to:
-
-- Utilize this model to automatically highlight the corresponding mood chip while I am typing, prior to hitting "Tune in"
-- Compare my classifier results with those of Gemini on a set of common test phrases, to identify areas where the two provide differing classifications
