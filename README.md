@@ -33,32 +33,18 @@ AI chat box like ChatGPT, Gemini, or Claude:
 
 ## What I learned building it
 
-This was my first time actually deploying an app for real, and my first
-time doing prompt engineering on purpose instead of just chatting with an AI. What has challenged me:
+This was my first time actually deploying an app for real, and my first time doing prompt engineering on purpose instead of just chatting with an AI. What has challenged me:
 
-- This was also the first time I actually learned how to use git for
-  real commits, pushing, branches, all of it, not just local project on computer.
-- Working with Claude Code taught me how to actually structure debugging and learning step by step, instead of just guessing at random until something worked.
-- Getting an LLM to reply with clean JSON instead of a paragraph is its own
-  It's much more effective to show the model the exact shape you desire.
-  Just explaining it in words.
-- Even then, Gemini kept wrapping its JSON in markdown code fences, like it
-  I was preparing a chat reply rather than sending the raw data, which caused json.loads() to fail until cutting that wrapper away so only the raw `{...}`
-- React state finally clicked once I stopped thinking "the UI" and started
-  thinking about what changes in the data and what occurs when it does.
-- At first CORS was confusing, but it turned out that the browser was just blocking it.
-  your frontend and backend from talking since they run on different
-  Ports and by adding the CORS middleware on the backend the problem is solved.
-- FastAPI gives you a free Swagger page for every endpoint, so I could
-  check the backend by itself and in no way interact with the frontend.
-- Building it stage by stage (health check, then models, then the AI call,
-  After the prompt and then the frontend, it was much easier to track down bugs.
-- Deploying it taught me the backend (Render) and frontend (Vite, on
-  In order for Vercel to connect with each other they need to know each other's real URLs.
-- I only found out why API keys can't just sit in a regular file after
-  reading about real cases where leaked keys got abused and ran up huge
-  bills for people. If it's not listed in `.gitignore`, it's basically
-  public the second you push.
+* I actually learned how to use git for real commits, pushing, and branches, which allowed me to learn more about CICD and share my project instead of keeping that locally.
+* Claude Code taught me how to actually structure debugging and learning step by step, instead of just guessing at random until something worked
+* Getting an LLM to reply with clean JSON instead of a paragraph. It's much more effective to show the model the exact shape you desire.
+* Gemini kept wrapping its JSON in markdown code fences, which caused json.loads() to fail until cutting that wrapper away so only the raw{...}
+* React state finally worked once I started thinking about what changes in the data and what happens when it does, like a storyteller.
+* At first, CORS was confusing, but it turned out the browser was blocking the frontend and backend from talking because they ran on different ports, and adding CORS middleware on the backend fixed it. 
+* FastAPI provides a Swagger page for every endpoint, so I could check the backend on its own without interacting with the frontend.
+* Dividing the app into backend and frontend and developing it stage by stage: health check, then models, then the AI call for prompts, and then the frontend.  It is much easier to break a big requirement into smaller tasks to build an app and track down bugs. 
+* Deploying it taught me the backend on Render needs to know the real URLs of the Vercel server for the frontend to bypass CORS. Vercel needs to know the URLs of the backend on Render to connect and call APIs to handle requests from users.
+* I only found out why API keys can't just sit in a regular file after reading about real cases where leaked keys got abused and ran up huge bills for people. If it's not listed in .gitignore, it's basically public the second you push.
 
 ## Running it
 
