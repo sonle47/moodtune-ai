@@ -7,6 +7,7 @@
 > after 15 minutes with no traffic, so if the site looks stuck loading the
 > first time, which is just waking back up (30-50 seconds).
 > Every request after that first one is fast again.
+> Please be patient for the first request. Thank you!
 
 It's 11pm, I have an exam in the
 morning, and I've just spent twenty minutes scrolling playlists instead of
@@ -30,6 +31,12 @@ AI chat box like ChatGPT, Gemini, or Claude:
 - That gets sent to Gemini, and it picks 10 real songs that match your mood.
 - Each song comes with a quick reason why it picked that one.
 - Every song links to YouTube so you can just click and start listening.
+
+## Testing
+<img width="1537" height="641" alt="image" src="https://github.com/user-attachments/assets/99664291-b86e-468d-bc5b-65570ae95789" />
+<img width="1534" height="915" alt="image" src="https://github.com/user-attachments/assets/f9a7784e-4fe3-4698-a48a-7781de82c7ec" />
+<img width="1547" height="891" alt="image" src="https://github.com/user-attachments/assets/61b06a6d-fd75-42d2-a80c-4b1bbfd3f618" />
+<img width="1558" height="897" alt="image" src="https://github.com/user-attachments/assets/2ba44129-74c5-4164-ac42-5e258d37eb19" />
 
 ## What I learned building it
 
